@@ -1,30 +1,14 @@
 import NextLink from 'next/link';
 
-import {
-	AppBar,
-	Badge,
-	Box,
-	Button,
-	IconButton,
-	Link,
-	Toolbar,
-	Typography,
-} from '@mui/material';
+import { AppBar, Badge, Box, Button, IconButton, Link, Toolbar, Typography } from '@mui/material';
 import { SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
 
 export const Navbar = () => {
 	return (
 		<AppBar>
 			<Toolbar>
-				<NextLink
-					href={'/'}
-					passHref
-					legacyBehavior
-				>
-					<Link
-						display="flex"
-						alignItems="center"
-					>
+				<NextLink href={'/'} passHref legacyBehavior>
+					<Link display="flex" alignItems="center">
 						<Typography variant="h6">Teslo</Typography>
 						<Typography sx={{ ml: 0.5 }}>Shop</Typography>
 					</Link>
@@ -33,29 +17,17 @@ export const Navbar = () => {
 				<Box flex={1} />
 
 				<Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-					<NextLink
-						href="/categori/men"
-						passHref
-						legacyBehavior
-					>
+					<NextLink href="/categori/men" passHref legacyBehavior>
 						<Link>
 							<Button>Hombres</Button>
 						</Link>
 					</NextLink>
-					<NextLink
-						href="/categori/men"
-						passHref
-						legacyBehavior
-					>
+					<NextLink href="/categori/men" passHref legacyBehavior>
 						<Link>
 							<Button>Mujeres</Button>
 						</Link>
 					</NextLink>
-					<NextLink
-						href="/categori/men"
-						passHref
-						legacyBehavior
-					>
+					<NextLink href="/categori/men" passHref legacyBehavior>
 						<Link>
 							<Button>Niños</Button>
 						</Link>
@@ -67,17 +39,10 @@ export const Navbar = () => {
 					<SearchOutlined />
 				</IconButton>
 
-				<NextLink
-					href="/cart"
-					passHref
-					legacyBehavior
-				>
+				<NextLink href="/cart" passHref legacyBehavior>
 					<Link>
 						<IconButton>
-							<Badge
-								badgeContent={2}
-								color="secondary"
-							>
+							<Badge badgeContent={2} color="secondary">
 								<ShoppingCartOutlined />
 							</Badge>
 						</IconButton>
