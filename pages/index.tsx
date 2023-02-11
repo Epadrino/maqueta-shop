@@ -1,13 +1,8 @@
 import { ShopLayout } from '@/components/layout';
+import { ProductList } from '@/components/products';
 import { initialData } from '@/database/products';
 
-import {
-	Card,
-	CardActionArea,
-	CardMedia,
-	Grid,
-	Typography,
-} from '@mui/material';
+import { Typography } from '@mui/material';
 
 export default function Home() {
 	return (
@@ -28,31 +23,7 @@ export default function Home() {
 			>
 				Todos los productos
 			</Typography>
-
-			<Grid
-				container
-				spacing={4}
-			>
-				{initialData.products.map((products) => (
-					<Grid
-						item
-						xs={6}
-						sm={4}
-						key={products.slug}
-					>
-						{' '}
-						<Card>
-							<CardActionArea>
-								<CardMedia
-									component="img"
-									image={`products/${products.images[0]}`}
-									alt={products.title}
-								/>
-							</CardActionArea>
-						</Card>
-					</Grid>
-				))}
-			</Grid>
+			<ProductList products={initialData.products as any} />
 		</ShopLayout>
 	);
 }
