@@ -42,6 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:13.1.6"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:18.2.0"],\
+            ["react-slideshow-image", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:4.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
@@ -936,6 +937,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@swc/helpers", "npm:0.4.14"],\
             ["tslib", "npm:2.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tweenjs/tween.js", [\
+        ["npm:18.6.4", {\
+          "packageLocation": "./.yarn/cache/@tweenjs-tween.js-npm-18.6.4-3b136362c7-47208db3f6.zip/node_modules/@tweenjs/tween.js/",\
+          "packageDependencies": [\
+            ["@tweenjs/tween.js", "npm:18.6.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3779,6 +3789,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["react-slideshow-image", [\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/cache/react-slideshow-image-npm-4.2.0-415019c050-dfeac722a9.zip/node_modules/react-slideshow-image/",\
+          "packageDependencies": [\
+            ["react-slideshow-image", "npm:4.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:4.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-slideshow-image-virtual-5586d36dfc/0/cache/react-slideshow-image-npm-4.2.0-415019c050-dfeac722a9.zip/node_modules/react-slideshow-image/",\
+          "packageDependencies": [\
+            ["react-slideshow-image", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:4.2.0"],\
+            ["@tweenjs/tween.js", "npm:18.6.4"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["react", "npm:18.2.0"],\
+            ["resize-observer-polyfill", "npm:1.5.1"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["react-transition-group", [\
         ["npm:4.4.5", {\
           "packageLocation": "./.yarn/cache/react-transition-group-npm-4.4.5-98ea4ef96e-7560284010.zip/node_modules/react-transition-group/",\
@@ -3835,6 +3869,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/regexpp-npm-3.2.0-2513f32cfc-a78dc5c715.zip/node_modules/regexpp/",\
           "packageDependencies": [\
             ["regexpp", "npm:3.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["resize-observer-polyfill", [\
+        ["npm:1.5.1", {\
+          "packageLocation": "./.yarn/cache/resize-observer-polyfill-npm-1.5.1-603120e8a0-57e7f79489.zip/node_modules/resize-observer-polyfill/",\
+          "packageDependencies": [\
+            ["resize-observer-polyfill", "npm:1.5.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4198,6 +4241,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:13.1.6"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:18.2.0"],\
+            ["react-slideshow-image", "virtual:b57bdc051fb696395fd1929e7fea5597baa0ab7c8db536d99966b05db3c508f80b9da8ec34d786f7fc87ec8b29c668c230a7965230b583d35158d8f0cad64832#npm:4.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\

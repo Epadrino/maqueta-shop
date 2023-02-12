@@ -49,7 +49,7 @@ export const Navbar = () => {
 					</Link>
 				</NextLink>
 
-				<Button>Menú</Button>
+				<Button sx={{ ml: 1 }}>Menú</Button>
 			</Toolbar>
 		</AppBar>
 	);

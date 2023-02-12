@@ -4,6 +4,8 @@ import { Box, Button, Chip, Grid, Typography } from '@mui/material';
 
 import { ShopLayout } from '@/components/layout';
 import { initialData } from '@/database/products';
+import { ProducSlideShow, SizeSelector } from '@/components/products';
+import { ItemCounter } from '@/components/ui';
 
 const produc = initialData.products[0];
 
@@ -13,6 +15,7 @@ const ProducPage = () => {
 			<Grid container spacing={3}>
 				<Grid item xs={12} sm={7}>
 					{/* Slideshow*/}
+					<ProducSlideShow images={produc.images} />
 				</Grid>
 
 				<Grid item xs={12} sm={5}>
@@ -28,7 +31,8 @@ const ProducPage = () => {
 						{/* cantidad */}
 						<Box sx={{ my: 2 }}>
 							<Typography variant="subtitle1">Cantidad</Typography>
-							{/* ItemCounter */}
+							<ItemCounter />
+							<SizeSelector selectedSize={produc.sizes[2]} sizes={produc.sizes} />
 						</Box>
 
 						{/* agregar al carrito */}
