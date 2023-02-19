@@ -21,20 +21,20 @@ const productsInCart = [
 	initialData.products[3],
 ];
 interface Props {
-	editable: boolean;
+	editable?: boolean;
 }
 
-export const CartList: FC<Props> = ({ editable }) => {
+export const CartList: FC<Props> = ({ editable = false }) => {
 	return (
 		<>
 			{productsInCart.map((product) => (
 				<Grid container spacing={2} key={product.slug} sx={{ mb: 1 }}>
 					<Grid item xs={3}>
-						<NextLink href={'product/slug'} passHref legacyBehavior>
+						<NextLink href={'/product/slug'} passHref legacyBehavior>
 							<Link>
 								<CardActionArea>
 									<CardMedia
-										image={`products/${product.images[0]}`}
+										image={`/products/${product.images[0]}`}
 										component="img"
 										sx={{ borderRadius: '5px' }}
 									/>
